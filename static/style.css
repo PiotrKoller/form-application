@@ -1,0 +1,16 @@
+.form-group{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#add_button{
+    margin-top: 15px;
+}
+
+#download_button{
+    background-color: green;
+}
+
+
+
