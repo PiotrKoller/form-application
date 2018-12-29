@@ -8,6 +8,7 @@
         <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vuejs-datepicker@1.5.4/dist/vuejs-datepicker.min.js"></script>
     </head>
     <body>
         <div>
@@ -18,7 +19,7 @@
                     <label for="surname">Nazwisko:</label>
                     <input type="text" class="form-control" id="surname" placeholder="Wpisz nazwisko: " v-model="surname">
                     <label for="date">Data urodzenia:</label>
-                    <input type="text" class="form-control" id="date" placeholder="Wybierz datę urodzenia: " v-model="date">
+                    <datepicker id="datepicker" v-model="date" name="datepicker" placeholder="Wpisz datę:" bootstrap-styling="true"></datepicker>
                     <label for="adress">Miejsce zamieszkania:</label>
                     <input type="text" class="form-control" id="address" placeholder="Wybierz miejsce zamieszkania: " v-model="address">
                     <button type="submit" class="btn btn-primary" id="add_button" @click="AddNew">Dodaj</button>

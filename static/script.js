@@ -1,3 +1,5 @@
+Vue.component('datepicker', vuejsDatepicker);
+
 var app = new Vue({
     el:'.form-group',
     data:{
